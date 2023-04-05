@@ -38,7 +38,7 @@ struct HomeView: View {
                 
             }
             .listStyle(InsetListStyle())
-            .navigationBarTitle("Posts")
+            .navigationBarTitle("Items")
             .navigationBarItems(trailing: plusButton)
         }
         .sheet(isPresented: $isPresentedNewPost, content: {

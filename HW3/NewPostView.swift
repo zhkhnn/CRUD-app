@@ -18,7 +18,7 @@ struct NewPostView: View {
             ZStack {
                 Color.gray.opacity(0.1).edgesIgnoringSafeArea(.all)
                 VStack(alignment: .leading) {
-                    Text("Create New Post").font(Font.system(size: 16, weight: .bold))
+                    Text("Create New Item").font(Font.system(size: 16, weight: .bold))
                     TextField("Title", text: $title)
                         .padding()
                         .background(Color.white)
@@ -38,7 +38,7 @@ struct NewPostView: View {
                     return Alert(title: title, message: message)
                 })
             }
-            .navigationBarTitle("New Post", displayMode: .inline)
+            .navigationBarTitle("New Item", displayMode: .inline)
             .navigationBarItems(leading: leading, trailing: trailing)
         }
         
@@ -69,8 +69,4 @@ struct NewPostView: View {
 }
 
 
-//struct NewPostView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        NewPostView()
-//    }
-//}
+
